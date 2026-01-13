@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pkl
+
+# Node / React
+node_modules/
+build/
+.env
+
+# VSCode / IDEs
+.vscode/
+*.swp
+
+# MacOS
+.DS_Store
