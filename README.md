@@ -217,7 +217,7 @@ print(f"Model Accuracy: {accuracy*100:.2f}%")
 
 ## 📜 License
 
-MIT License © 2026 [ankitkumar04100]
+MIT License © 2026 
 
 ---
 
