@@ -19,7 +19,7 @@
 7. [Architecture](#architecture)
 8. [Frontend](#frontend)
 9. [Backend](#backend)
-10. [Demo](#demo)
+10. [App Demo](#app-demo)
 11. [Deployment](#deployment)
 12. [Challenges](#challenges)
 13. [Accomplishments](#accomplishments)
@@ -168,14 +168,9 @@ print(f"Model Accuracy: {accuracy*100:.2f}%")
 
 ---
 
-## 🎬 Demo
+## 🎬 App Demo
 
-1. Upload water usage CSV  
-2. Click **“Analyze”**  
-3. Dashboard displays:  
-   - Leak Risk (%)  
-   - Status: Normal / Warning / Critical  
-   - Estimated water & cost savings
+[Aqualyx-AI](https://aqualyxai.lovable.app)
 
 ---
 
