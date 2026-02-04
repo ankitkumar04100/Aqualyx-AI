@@ -270,55 +270,55 @@ flowchart LR
 
 #### 🖥️ Frontend – Presentation Layer
 
-- **Technology**: React, Tailwind CSS
+**Technology**: React, Tailwind CSS
 
-- **Responsibilities:**
--- User interaction & data upload
--- Visualization of usage trends and risk scores
--- Display of savings and environmental impact
--- Fully responsive dashboard (desktop & mobile)
+**Responsibilities:**
+- User interaction & data upload
+- Visualization of usage trends and risk scores
+- Display of savings and environmental impact
+- Fully responsive dashboard (desktop & mobile)
 
 #### ⚙️ Backend – Application Layer
 
-- **Technology:** FastAPI, Python, SQLite
+**Technology:** FastAPI, Python, SQLite
 
-- **Responsibilities:**
--- Exposes REST APIs (/predict)
--- Validates and preprocesses input data
--- Orchestrates ML inference
--- Stores historical usage and predictions
--- Returns structured JSON responses to frontend
+**Responsibilities:**
+- Exposes REST APIs (/predict)
+- Validates and preprocesses input data
+- Orchestrates ML inference
+- Stores historical usage and predictions
+- Returns structured JSON responses to frontend
 
 #### 🤖 Machine Learning Engine – Intelligence Layer
 
-- **Model:** Random Forest Classifier
+**Model:** Random Forest Classifier
 
-- **Responsibilities:**
--- Detects abnormal usage patterns
--- Predicts leak probability
--- Classifies risk levels:
----Normal
----Warning
----Critical
--- Focused on predictive prevention, not just analysis
+**Responsibilities:**
+- Detects abnormal usage patterns
+- Predicts leak probability
+**Classifies risk levels:**
+- Normal
+- Warning
+- Critical
+- Focused on predictive prevention, not just analysis
 
 #### 💡 Insights Engine – Decision Layer
 
 - Translates ML predictions into human-readable insights
-- Calculates:
--- Estimated water saved
--- Cost savings
--- Environmental impact indicators
+**Calculates:**
+- Estimated water saved
+- Cost savings
+- Environmental impact indicators
 - Enables users to take preventive action early
 
 #### 🗄️ Data Layer
 
-- **Storage:** SQLite (extensible to cloud databases)
+**Storage:** SQLite (extensible to cloud databases)
 
-- **Stores:**
--- Raw water usage data
--- Engineered features
--- Prediction history
+**Stores:**
+- Raw water usage data
+- Engineered features
+- Prediction history
 - Designed to support future IoT and real-time streaming
 
 #### ☁️ Deployment Architecture
