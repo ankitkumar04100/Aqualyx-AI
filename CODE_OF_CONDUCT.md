@@ -17,7 +17,7 @@ Unacceptable behavior includes:
 - Disruptive behavior in discussions or contributions
 
 ## Enforcement
-Project maintainers are responsible for enforcing this code of conduct. Any complaints should be sent to [your_email@example.com]. Reports will be reviewed and addressed promptly.
+Project maintainers are responsible for enforcing this code of conduct. Any complaints should be sent to [ankitkumarforall@gmail.com]. Reports will be reviewed and addressed promptly.
 
 ## Scope
 This code of conduct applies both within project spaces and in public spaces when representing the project.
