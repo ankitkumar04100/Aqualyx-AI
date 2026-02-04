@@ -200,6 +200,7 @@ Aqualyx AI is **full-stack, end-to-end**:
 ### Model
 Random Forest Classifier predicts **leak probability**:
 
+
 \[
 f(X) \rightarrow P(\text{Leak})
 \]
@@ -208,6 +209,7 @@ Where `X` = usage features
 Output = probability of leakage
 
 ### Evaluation Metrics
+```
 \[
 \text{Accuracy}, \quad \text{Precision}, \quad \text{Recall}, \quad \text{F1 Score}
 \]
@@ -223,7 +225,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Model Accuracy: {accuracy*100:.2f}%")
-
+```
 ---
 
 ## 🗂️ Dataset
@@ -242,19 +244,89 @@ print(f"Model Accuracy: {accuracy*100:.2f}%")
 
 ## 🏛️ Architecture
 
-**Flow:**
-- User → React Dashboard → FastAPI Backend → ML Model → Risk Score & Insights
+Aqualyx AI is built using a modular, scalable, end-to-end architecture that transforms raw water usage data into predictive intelligence and actionable insights.
+The system is designed as a cloud-ready AI web application with clear separation of concerns.
 
----
+### 🔁 End-to-End Flow
+```
+flowchart LR
+    U[User] --> F[React Dashboard]
 
-**Components:**
+    F -->|Upload Usage Data / Request Analysis| B[FastAPI Backend]
 
-- **Frontend:** Dashboard & visualization  
-- **Backend:** API & database  
-- **ML Model:** Leak detection & risk scoring  
-- **Insights Engine:** Cost/water/environmental impact metrics
+    B --> P[Data Preprocessing<br/> & Feature Engineering]
 
----
+    P --> M[ML Leak Detection Model]
+
+    M --> R[Risk Scoring Engine<br/>Normal • Warning • Critical]
+
+    R --> I[Insights Engine<br/>Water • Cost • Environmental Impact]
+
+    I --> B
+    B -->|Prediction Results| F
+```
+
+### 🧩 Architecture Components
+
+#### 🖥️ Frontend – Presentation Layer
+
+- **Technology**: React, Tailwind CSS
+
+- **Responsibilities:**
+-- User interaction & data upload
+-- Visualization of usage trends and risk scores
+-- Display of savings and environmental impact
+-- Fully responsive dashboard (desktop & mobile)
+
+#### ⚙️ Backend – Application Layer
+
+- **Technology:** FastAPI, Python, SQLite
+
+- **Responsibilities:**
+-- Exposes REST APIs (/predict)
+-- Validates and preprocesses input data
+-- Orchestrates ML inference
+-- Stores historical usage and predictions
+-- Returns structured JSON responses to frontend
+
+#### 🤖 Machine Learning Engine – Intelligence Layer
+
+- **Model:** Random Forest Classifier
+
+- **Responsibilities:**
+-- Detects abnormal usage patterns
+-- Predicts leak probability
+-- Classifies risk levels:
+---Normal
+---Warning
+---Critical
+-- Focused on predictive prevention, not just analysis
+
+#### 💡 Insights Engine – Decision Layer
+
+- Translates ML predictions into human-readable insights
+- Calculates:
+-- Estimated water saved
+-- Cost savings
+-- Environmental impact indicators
+- Enables users to take preventive action early
+
+#### 🗄️ Data Layer
+
+- **Storage:** SQLite (extensible to cloud databases)
+
+- **Stores:**
+-- Raw water usage data
+-- Engineered features
+-- Prediction history
+- Designed to support future IoT and real-time streaming
+
+#### ☁️ Deployment Architecture
+
+- **Frontend:** Vercel
+- **Backend & ML API:** Render
+- **Database:** SQLite
+- **Access:** Browser-based web application
 
 ## 💻 Frontend
 
