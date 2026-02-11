@@ -1,6 +1,59 @@
-fastapi==0.105.0
-uvicorn==0.23.2
-pandas==2.1.0
-scikit-learn==1.3.2
-numpy==1.26.0
-python-multipart==0.0.6
+# ===============================
+# Core Web Framework
+# ===============================
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# ===============================
+# Data Validation & Settings
+# ===============================
+pydantic==2.6.1
+pydantic-settings==2.2.1
+python-dotenv==1.0.1
+
+# ===============================
+# Database
+# ===============================
+sqlalchemy==2.0.27
+psycopg2-binary==2.9.9
+
+# ===============================
+# Machine Learning
+# ===============================
+scikit-learn==1.4.1.post1
+pandas==2.2.1
+numpy==1.26.4
+joblib==1.3.2
+
+# ===============================
+# Visualization (Optional API reports)
+# ===============================
+matplotlib==3.8.3
+
+# ===============================
+# API Utilities
+# ===============================
+python-multipart==0.0.9
+requests==2.31.0
+
+# ===============================
+# Security (If JWT Added Later)
+# ===============================
+passlib[bcrypt]==1.7.4
+python-jose==3.3.0
+
+# ===============================
+# Testing
+# ===============================
+pytest==8.0.2
+httpx==0.27.0
+
+# ===============================
+# Logging & Monitoring
+# ===============================
+loguru==0.7.2
+
+# ===============================
+# Deployment / Production
+# ===============================
+gunicorn==21.2.0
