@@ -1,34 +1,24 @@
-name: "CodeQL"
+name: "CodeQL Security Scan"
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  schedule:
-    - cron: '0 0 * * 0'
 
 jobs:
   analyze:
-    name: Analyze
+    name: Analyze Python Code
     runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'python', 'javascript' ]
-
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          languages: ${{ matrix.language }}
-
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v3
+          languages: python
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
