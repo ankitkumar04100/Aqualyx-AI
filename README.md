@@ -27,7 +27,7 @@
 15. [Architecture](#architecture)
 16. [Frontend](#frontend)
 7. [Backend](#backend)
-18. [App Demo & Screenshots](#app-demo)
+18. [Demo App, Demo Video & Screenshots](#app-demo)
 19. [Deployment](#deployment)
 20. [Challenges](#challenges)
 21. [Accomplishments](#accomplishments)
@@ -346,9 +346,17 @@ flowchart LR
 
 ---
 
-## 🎬 App Demo
+## Demo App, Demo Video & Screenshots
 
+### Demo App
 [Aqualyx-AI](https://aqualyxai.lovable.app)
+
+---
+
+### Demo Video
+https://youtu.be/QX-H5oXe1hQ
+
+---
 
 ### Screenshots
 ![IMG_20260113_191604](https://github.com/user-attachments/assets/dc960f6e-7fce-4bd0-ba6d-83c43dee609a)
