@@ -1,0 +1,86 @@
+Aqualyx-AI/
+│
+├── 📁 backend/
+│   ├── main.py
+│   ├── config.py
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   │
+│   ├── 📁 app/
+│   │   ├── __init__.py
+│   │   ├── api.py
+│   │   ├── schemas.py
+│   │   ├── database.py
+│   │   ├── services.py
+│   │   ├── models.py
+│   │   └── utils.py
+│   │
+│   ├── 📁 ml/
+│   │   ├── train_model.py
+│   │   ├── predict.py
+│   │   ├── feature_engineering.py
+│   │   ├── model.pkl
+│   │   └── metrics.json
+│   │
+│   └── 📁 tests/
+│       └── test_api.py
+│
+├── 📁 frontend/
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── tailwind.config.js
+│   │
+│   ├── 📁 public/
+│   │
+│   └── 📁 src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       │
+│       ├── 📁 pages/
+│       │   ├── Home.jsx
+│       │   ├── Analytics.jsx
+│       │   └── Savings.jsx
+│       │
+│       ├── 📁 components/
+│       │   ├── RiskMeter.jsx
+│       │   ├── UsageChart.jsx
+│       │   ├── SavingsCard.jsx
+│       │   └── UploadCSV.jsx
+│       │
+│       └── 📁 services/
+│           └── api.js
+│
+├── 📁 data/
+│   ├── sample_water_usage.csv
+│   └── synthetic_dataset.csv
+│
+├── demo_app,demo_video&screenshots
+│     
+│
+├── 📁 docs/
+│   ├── architecture.md
+│   ├── api-docs.md
+│   ├── model-details.md
+│   └── deployment-guide.md
+│
+├── 📁 .github/
+│   ├── 📁 workflows/
+│   │   ├── backend-ci.yml
+│   │   ├── frontend-ci.yml
+│   │   └── codeql.yml
+│   │
+│   ├── 📁 ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   │
+│   └── PULL_REQUEST_TEMPLATE.md
+│
+├── .env.example
+├── .gitignore
+├── docker-compose.yml
+├── SECURITY.md
+├── ROADMAP.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
