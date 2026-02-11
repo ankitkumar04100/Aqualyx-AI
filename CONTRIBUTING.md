@@ -5,24 +5,37 @@ We welcome contributions of any kind: **code, documentation, bug reports, featur
 
 ---
 
-## How to Contribute
+## 🚀 Getting Started
 
-1. **Fork the repository**  
-2. **Clone your fork**
-- git clone https://github.com/ankitkumar04100/Aqualyx-AI.git
-3. **Create a new branch**
-- git checkout -b feature/your-feature
-4. **Make your changes**
-- (code, docs, dataset, or frontend)
-5. **Test your changes**
-- Backend + ML: run scripts/train_model.py and backend/main.py
-- Frontend: run npm install and npm start
-6. **Commit and push**
-- git add .
-- git commit -m "Add feature X or fix issue Y"
-- git push origin feature/your-feature
-7. **Open a Pull Request (PR)** to the main branch
+### 1️⃣ Fork the Repository
 
+Click the **Fork** button on GitHub.
+
+### 2️⃣ Clone Your Fork
+
+```bash
+git clone https://github.com/your-username/aqualyx-ai.git
+cd aqualyx-ai
+```
+### 3️⃣ Create a New Branch
+```bash
+git checkout -b feature/your-feature-name
+```
+
+## 🧪 Running Locally
+### Backend
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
 ---
 
 ## Guidelines
