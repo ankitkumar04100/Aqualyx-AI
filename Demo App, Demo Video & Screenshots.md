@@ -1,5 +1,10 @@
-## App Demo
+## Demo App
 [Aqualyx-AI](https://aqualyxai.lovable.app)
+
+---
+
+## Demo Video
+https://youtu.be/QX-H5oXe1hQ
 
 ---
 
