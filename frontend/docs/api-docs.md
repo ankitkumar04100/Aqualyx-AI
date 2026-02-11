@@ -1,10 +1,5 @@
 # 📡 Aqualyx AI – API Documentation
 
-Base URL:
-https://your-backend-url.com
-
----
-
 ## 🔍 Health Check
 
 ### GET /health
