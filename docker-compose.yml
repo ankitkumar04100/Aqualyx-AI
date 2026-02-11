@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: aqualyx-backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+      - DATABASE_URL=sqlite:///./water_usage.db
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: aqualyx-frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:15
+    container_name: aqualyx-db
+    restart: always
+    environment:
+      POSTGRES_USER: aqualyx
+      POSTGRES_PASSWORD: securepassword
+      POSTGRES_DB: aqualyx_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
